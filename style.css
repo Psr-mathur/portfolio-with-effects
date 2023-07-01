@@ -1,0 +1,355 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* background-color: aquamarine; */
+}
+.container {
+	background-color: #111;
+	overflow: hidden;
+}
+.salute {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.salutetextcontainer {
+	flex: 3;
+	/* border: 1px red solid; */
+}
+.saluteimgcontainer {
+	flex: 1;
+	/* border:1px blue solid; */
+}
+.salutetext {
+	color: #333;
+	font-size: 60vw;
+	cursor: default;
+}
+.saluteimg {
+	width: 100%;
+}
+.namecontainer {
+	height: 100vh;
+	background-color: rebeccapurple;
+	/* overflow: hidden; */
+}
+.name {
+	font-size: 15vw;
+	color: #333;
+	cursor: default;
+	text-align: center;
+	line-height: 100vh;
+}
+.jobtitlecontainer {
+	height: 100vh;
+	/* overflow: hidden; */
+}
+.dark {
+	background: url("./img/starry-night-design.jpg");
+}
+.purple {
+	background: purple url("./img/bgg.jpg");
+}
+.jobtitle {
+	font-size: 9vw;
+	color: #333;
+	line-height: 100vh;
+	cursor: default;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	gap: 35vh;
+	padding: 0rem 6.25rem;
+}
+.projectstitle {
+	font-size: 10vw;
+	color: #333;
+}
+.project {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	gap: 6.25rem;
+	/* overflow: hidden; */
+	/* background-color: antiquewhite; */
+}
+.project:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+.phone {
+	height: 38.75rem;
+	width: 18.75rem;
+	/* background:#fff; */
+	position: relative;
+	/* flex: 1; */
+	/* margin: 0px 50px;*/
+}
+.phonescreen {
+	width: 278px;
+	height: 584px;
+	/* background: rebeccapurple; */
+	position: absolute;
+	top: 14px;
+	left: 11px;
+	border-radius: 12px;
+	overflow-y: scroll;
+}
+.phonescreen::-webkit-scrollbar {
+	display: none;
+}
+.phoneapp {
+	width: 100%;
+}
+.projectdetail {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+.projecttitle {
+	font-size: 7vw;
+	color: #555;
+}
+.projectdesc {
+	font-size: 20px;
+	color: #555;
+	text-align: justify;
+	line-height: 2rem;
+}
+.projectbutton {
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 2px gray solid;
+	color: #555;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.projectbutton::after {
+	content: "View Demo";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background-color: rgb(156, 156, 156);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.75s all;
+}
+.projectbutton:hover.projectbutton::after {
+	transform: translateX(100%);
+}
+
+.laptop {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	max-height: 380px;
+	/* flex: 1; */
+	position: relative;
+	/* background-color: aqua; */
+}
+.laptopscreen {
+	/* width: 385px;
+    height: 268px; */
+	/* top: 29px;
+    left: 107px; */
+	top: 7.75%;
+	left: 17.83%;
+	bottom: 21.7%;
+	right: 18%;
+	position: absolute;
+	/* background:brown; */
+	border-radius: 5px;
+	overflow: scroll;
+}
+.laptopscreen::-webkit-scrollbar {
+	display: none;
+}
+.github {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	color: #555;
+}
+
+.githubtitle {
+	font-size: 100px;
+	align-self: center;
+}
+.githublogo {
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.githubchart {
+	width: 820px;
+	/* background: red; */
+}
+.boxcontainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box {
+	width: 15px;
+	height: 15px;
+	background-color: #171c25;
+	border-radius: 2px;
+}
+.dates {
+	font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+	.projects {
+		padding: 0px 10%;
+	}
+	.project {
+		flex-direction: column;
+		gap: 5rem;
+		height: 100%;
+	}
+	.project:nth-child(2n) {
+		flex-direction: column;
+		gap: 4rem;
+		height: 100%;
+	}
+	.phone,
+	.laptop {
+		transform: none !important;
+	}
+	.laptop {
+		width: 100%;
+		height: 100%;
+	}
+	.laptopscreen {
+		/* top:7.75%;
+        left: 17.83%;
+        right: 18%; */
+		bottom: 22.6%;
+	}
+	.dates,
+	.boxcontainer {
+		display: none;
+	}
+}
+
+.contactus {
+	/* background: red; */
+	margin: 0;
+	padding: 5px 0px 80px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contactus * {
+	box-sizing: border-box;
+}
+
+.contactus:focus {
+	outline: 0;
+}
+
+.wrapper {
+	margin: 100px auto 0;
+	width: 70%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	width: 100%;
+	margin: 0;
+}
+
+form * {
+	font-size: 20px;
+	letter-spacing: 0.075em;
+	font-weight: 300;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+form .field {
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+form .field label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #999, #555);
+	width: 100%;
+	height: 64px;
+	transition: width 333ms ease-in-out;
+	text-align: center;
+	padding: 18px 0;
+}
+
+form .field input[type="text"],
+form .field textarea {
+	border: none;
+	width: 100%;
+	height: 64px;
+	margin: 0;
+	padding-left: 19.5%;
+	color: gray;
+	background-color: lightgray;
+}
+
+form #msg {
+	height: 64px;
+	resize: none;
+	transition: all 333ms ease-in-out;
+	padding-top: 18px;
+}
+form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+	height: 166px;
+}
+form input[type="text"]:focus + label,
+form input[type="text"]:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:not(:placeholder-shown) + label,
+form .field:hover label {
+	width: 18%;
+}
+form input[type="submit"] {
+	background: linear-gradient(90deg, #999, lightgray);
+	-webkit-appearance: none;
+	border: none;
+	position: relative;
+	padding: 13px 50px;
+	transition: all 0.3s ease-in-out;
+}
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+	background: #666;
+}
+
+@media screen and (width<=600px) {
+	/* textarea:hover ~ label {
+		opacity: 0;
+		display: none;
+	} */
+	input:focus ~ label {
+		font-size: 10px;
+	}
+	textarea:focus ~ label {
+		font-size: 8px;
+	}
+}
