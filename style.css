@@ -8,7 +8,7 @@
 	overflow: hidden;
 }
 .salute {
-	height: 100svh;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
@@ -30,7 +30,7 @@
 	width: 100%;
 }
 .namecontainer {
-	height: 100svh;
+	height: 100vh;
 	background-color: rebeccapurple;
 	/* overflow: hidden; */
 }
@@ -39,10 +39,10 @@
 	color: #333;
 	cursor: default;
 	text-align: center;
-	line-height: 100svh;
+	line-height: 100vh;
 }
 .jobtitlecontainer {
-	height: 100svh;
+	height: 100vh;
 	/* overflow: hidden; */
 }
 .dark {
@@ -54,14 +54,14 @@
 .jobtitle {
 	font-size: 9vw;
 	color: #333;
-	line-height: 100svh;
+	line-height: 100vh;
 	cursor: default;
 }
 
 .projects {
 	display: flex;
 	flex-direction: column;
-	gap: 35svh;
+	gap: 35vh;
 	padding: 0rem 6.25rem;
 }
 .projectstitle {
@@ -70,7 +70,7 @@
 }
 .project {
 	display: flex;
-	height: 100svh;
+	height: 100vh;
 	align-items: center;
 	gap: 6.25rem;
 	/* overflow: hidden; */
@@ -173,7 +173,7 @@
 	display: none;
 }
 .github {
-	height: 100svh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
