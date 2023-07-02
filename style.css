@@ -8,7 +8,7 @@
 	overflow: hidden;
 }
 .salute {
-	height: 100vh;
+	height: 100svh;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
@@ -30,7 +30,7 @@
 	width: 100%;
 }
 .namecontainer {
-	height: 100vh;
+	height: 100svh;
 	background-color: rebeccapurple;
 	/* overflow: hidden; */
 }
@@ -39,10 +39,10 @@
 	color: #333;
 	cursor: default;
 	text-align: center;
-	line-height: 100vh;
+	line-height: 100svh;
 }
 .jobtitlecontainer {
-	height: 100vh;
+	height: 100svh;
 	/* overflow: hidden; */
 }
 .dark {
@@ -54,14 +54,14 @@
 .jobtitle {
 	font-size: 9vw;
 	color: #333;
-	line-height: 100vh;
+	line-height: 100svh;
 	cursor: default;
 }
 
 .projects {
 	display: flex;
 	flex-direction: column;
-	gap: 35vh;
+	gap: 35svh;
 	padding: 0rem 6.25rem;
 }
 .projectstitle {
@@ -70,7 +70,7 @@
 }
 .project {
 	display: flex;
-	height: 100vh;
+	height: 100svh;
 	align-items: center;
 	gap: 6.25rem;
 	/* overflow: hidden; */
@@ -173,7 +173,7 @@
 	display: none;
 }
 .github {
-	height: 100vh;
+	height: 100svh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -330,7 +330,7 @@ form .field:hover label {
 }
 form input[type="submit"] {
 	background: linear-gradient(90deg, #999, lightgray);
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
 	border: none;
 	position: relative;
 	padding: 13px 50px;
